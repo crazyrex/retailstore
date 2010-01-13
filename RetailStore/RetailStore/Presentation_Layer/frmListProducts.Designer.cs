@@ -66,6 +66,7 @@
             // txtProdName
             // 
             this.txtProdName.Location = new System.Drawing.Point(101, 61);
+            this.txtProdName.MaxLength = 255;
             this.txtProdName.Name = "txtProdName";
             this.txtProdName.Size = new System.Drawing.Size(164, 20);
             this.txtProdName.TabIndex = 2;
@@ -74,6 +75,7 @@
             // txtProdId
             // 
             this.txtProdId.Location = new System.Drawing.Point(101, 25);
+            this.txtProdId.MaxLength = 6;
             this.txtProdId.Name = "txtProdId";
             this.txtProdId.Size = new System.Drawing.Size(164, 20);
             this.txtProdId.TabIndex = 1;

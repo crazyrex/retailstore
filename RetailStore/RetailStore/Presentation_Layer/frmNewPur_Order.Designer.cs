@@ -81,7 +81,6 @@
             this.groupBox1.TabIndex = 1;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "General Information";
-            
             // 
             // btnSearch
             // 
@@ -146,6 +145,7 @@
             // txtPurchaseId
             // 
             this.txtPurchaseId.Location = new System.Drawing.Point(108, 24);
+            this.txtPurchaseId.MaxLength = 6;
             this.txtPurchaseId.Name = "txtPurchaseId";
             this.txtPurchaseId.Size = new System.Drawing.Size(126, 20);
             this.txtPurchaseId.TabIndex = 1;

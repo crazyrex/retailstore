@@ -66,6 +66,7 @@
             // txtWhName
             // 
             this.txtWhName.Location = new System.Drawing.Point(120, 67);
+            this.txtWhName.MaxLength = 255;
             this.txtWhName.Name = "txtWhName";
             this.txtWhName.Size = new System.Drawing.Size(175, 20);
             this.txtWhName.TabIndex = 2;
@@ -83,6 +84,7 @@
             // txtWhId
             // 
             this.txtWhId.Location = new System.Drawing.Point(120, 28);
+            this.txtWhId.MaxLength = 6;
             this.txtWhId.Name = "txtWhId";
             this.txtWhId.Size = new System.Drawing.Size(175, 20);
             this.txtWhId.TabIndex = 1;

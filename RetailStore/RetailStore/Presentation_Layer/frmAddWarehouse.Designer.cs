@@ -81,6 +81,7 @@
             // txtWarehouseId
             // 
             this.txtWarehouseId.Location = new System.Drawing.Point(117, 51);
+            this.txtWarehouseId.MaxLength = 6;
             this.txtWarehouseId.Name = "txtWarehouseId";
             this.txtWarehouseId.Size = new System.Drawing.Size(170, 20);
             this.txtWarehouseId.TabIndex = 1;
@@ -97,6 +98,7 @@
             // txtWarehouseName
             // 
             this.txtWarehouseName.Location = new System.Drawing.Point(117, 84);
+            this.txtWarehouseName.MaxLength = 255;
             this.txtWarehouseName.Name = "txtWarehouseName";
             this.txtWarehouseName.Size = new System.Drawing.Size(170, 20);
             this.txtWarehouseName.TabIndex = 2;
@@ -114,6 +116,7 @@
             // txtCapacity
             // 
             this.txtCapacity.Location = new System.Drawing.Point(117, 147);
+            this.txtCapacity.MaxLength = 6;
             this.txtCapacity.Name = "txtCapacity";
             this.txtCapacity.Size = new System.Drawing.Size(170, 20);
             this.txtCapacity.TabIndex = 4;
@@ -164,6 +167,7 @@
             // txtAddress3
             // 
             this.txtAddress3.Location = new System.Drawing.Point(79, 74);
+            this.txtAddress3.MaxLength = 255;
             this.txtAddress3.Name = "txtAddress3";
             this.txtAddress3.Size = new System.Drawing.Size(190, 20);
             this.txtAddress3.TabIndex = 7;
@@ -171,6 +175,7 @@
             // txtAddress2
             // 
             this.txtAddress2.Location = new System.Drawing.Point(79, 46);
+            this.txtAddress2.MaxLength = 255;
             this.txtAddress2.Name = "txtAddress2";
             this.txtAddress2.Size = new System.Drawing.Size(190, 20);
             this.txtAddress2.TabIndex = 6;
@@ -196,6 +201,7 @@
             // txtCountry
             // 
             this.txtCountry.Location = new System.Drawing.Point(79, 194);
+            this.txtCountry.MaxLength = 255;
             this.txtCountry.Name = "txtCountry";
             this.txtCountry.Size = new System.Drawing.Size(190, 20);
             this.txtCountry.TabIndex = 11;
@@ -212,6 +218,7 @@
             // txtState
             // 
             this.txtState.Location = new System.Drawing.Point(79, 164);
+            this.txtState.MaxLength = 255;
             this.txtState.Name = "txtState";
             this.txtState.Size = new System.Drawing.Size(190, 20);
             this.txtState.TabIndex = 10;
@@ -228,6 +235,7 @@
             // txtPin
             // 
             this.txtPin.Location = new System.Drawing.Point(79, 133);
+            this.txtPin.MaxLength = 6;
             this.txtPin.Name = "txtPin";
             this.txtPin.Size = new System.Drawing.Size(190, 20);
             this.txtPin.TabIndex = 9;
@@ -244,6 +252,7 @@
             // txtCity
             // 
             this.txtCity.Location = new System.Drawing.Point(79, 103);
+            this.txtCity.MaxLength = 255;
             this.txtCity.Name = "txtCity";
             this.txtCity.Size = new System.Drawing.Size(190, 20);
             this.txtCity.TabIndex = 8;
@@ -260,6 +269,7 @@
             // txtAddress1
             // 
             this.txtAddress1.Location = new System.Drawing.Point(79, 18);
+            this.txtAddress1.MaxLength = 255;
             this.txtAddress1.Name = "txtAddress1";
             this.txtAddress1.Size = new System.Drawing.Size(190, 20);
             this.txtAddress1.TabIndex = 5;
@@ -294,6 +304,7 @@
             // txtContact
             // 
             this.txtContact.Location = new System.Drawing.Point(117, 117);
+            this.txtContact.MaxLength = 11;
             this.txtContact.Name = "txtContact";
             this.txtContact.Size = new System.Drawing.Size(170, 20);
             this.txtContact.TabIndex = 3;
