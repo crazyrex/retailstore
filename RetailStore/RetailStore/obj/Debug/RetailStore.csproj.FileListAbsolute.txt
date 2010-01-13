@@ -1,0 +1,150 @@
+D:\StudyRoom\MyRoom\RetailStore\RetailStore\RetailStore\bin\Debug\RetailStore.exe.config
+D:\StudyRoom\MyRoom\RetailStore\RetailStore\RetailStore\obj\Debug\Interop.MSACAL.dll
+D:\StudyRoom\MyRoom\RetailStore\RetailStore\RetailStore\obj\Debug\RetailStore.csproj.ResolveComReference.cache
+D:\StudyRoom\MyRoom\RetailStore\RetailStore\RetailStore\bin\Debug\RetailStore.exe
+D:\StudyRoom\MyRoom\RetailStore\RetailStore\RetailStore\bin\Debug\RetailStore.pdb
+D:\StudyRoom\MyRoom\RetailStore\RetailStore\RetailStore\bin\Debug\Interop.MSACAL.dll
+D:\StudyRoom\MyRoom\RetailStore\RetailStore\RetailStore\obj\Debug\ResolveAssemblyReference.cache
+D:\StudyRoom\MyRoom\RetailStore\RetailStore\RetailStore\obj\Debug\RetailStore.frmnewsales_order.resources
+D:\StudyRoom\MyRoom\RetailStore\RetailStore\RetailStore\obj\Debug\RetailStore.frmaboutus.resources
+D:\StudyRoom\MyRoom\RetailStore\RetailStore\RetailStore\obj\Debug\RetailStore.Presentation_Layer.frmAddCustomers.resources
+D:\StudyRoom\MyRoom\RetailStore\RetailStore\RetailStore\obj\Debug\RetailStore.Presentation_Layer.frmAddProducts.resources
+D:\StudyRoom\MyRoom\RetailStore\RetailStore\RetailStore\obj\Debug\RetailStore.Presentation_Layer.frmAddUsers.resources
+D:\StudyRoom\MyRoom\RetailStore\RetailStore\RetailStore\obj\Debug\RetailStore.Presentation_Layer.frmAddVendors.resources
+D:\StudyRoom\MyRoom\RetailStore\RetailStore\RetailStore\obj\Debug\RetailStore.Presentation_Layer.frmChangePass.resources
+D:\StudyRoom\MyRoom\RetailStore\RetailStore\RetailStore\obj\Debug\RetailStore.frmLogin.resources
+D:\StudyRoom\MyRoom\RetailStore\RetailStore\RetailStore\obj\Debug\RetailStore.Presentation_Layer.frmMDI.resources
+D:\StudyRoom\MyRoom\RetailStore\RetailStore\RetailStore\obj\Debug\RetailStore.Presentation_Layer.frmNewPur_Order.resources
+D:\StudyRoom\MyRoom\RetailStore\RetailStore\RetailStore\obj\Debug\RetailStore.Presentation_Layer.frmSalary.resources
+D:\StudyRoom\MyRoom\RetailStore\RetailStore\RetailStore\obj\Debug\RetailStore.Presentation_Layer.frmTimesheet.resources
+D:\StudyRoom\MyRoom\RetailStore\RetailStore\RetailStore\obj\Debug\RetailStore.Properties.Resources.resources
+D:\StudyRoom\MyRoom\RetailStore\RetailStore\RetailStore\obj\Debug\RetailStore.csproj.GenerateResource.Cache
+D:\StudyRoom\MyRoom\RetailStore\RetailStore\RetailStore\obj\Debug\RetailStore.exe
+D:\StudyRoom\MyRoom\RetailStore\RetailStore\RetailStore\obj\Debug\RetailStore.pdb
+D:\StudyRoom\MyRoom\RetailStore\RetailStore\RetailStore\obj\Debug\RetailStore.Presentation_Layer.frmListProducts.resources
+D:\StudyRoom\MyRoom\RetailStore\RetailStore\RetailStore\obj\Debug\RetailStore.Presentation_Layer.frmListVendors.resources
+D:\StudyRoom\MyRoom\RetailStore\RetailStore\RetailStore\obj\Debug\RetailStore.Presentation_Layer.frmListWarehouses.resources
+D:\StudyRoom\MyRoom\RetailStore\RetailStore\RetailStore\obj\Debug\RetailStore.Presentation_Layer.frmListCustomers.resources
+D:\StudyRoom\MyRoom\RetailStore\RetailStore\RetailStore\obj\Debug\RetailStore.Presentation_Layer.frmListUsers.resources
+D:\StudyRoom\MyRoom\RetailStore\RetailStore\RetailStore\obj\Debug\RetailStore.Presentation_Layer.frmAddWarehouse.resources
+D:\StudyRoom\MyRoom\RetailStore\RetailStore\RetailStore\obj\Debug\RetailStore.Crystal_Reports.frmStockReport.resources
+D:\StudyRoom\MyRoom\RetailStore\RetailStore\RetailStore\obj\Debug\RetailStore.Crystal_Reports.frmPurchaseReport.resources
+D:\StudyRoom\MyRoom\RetailStore\RetailStore\RetailStore\obj\Debug\RetailStore.Crystal_Reports.frmProductReport.resources
+D:\StudyRoom\MyRoom\RetailStore\RetailStore\RetailStore\obj\Debug\RetailStore.Crystal_Reports.frmVendorReport.resources
+D:\StudyRoom\MyRoom\RetailStore\RetailStore\RetailStore\obj\Debug\RetailStore.Crystal_Reports.frmCustomerReport.resources
+D:\StudyRoom\MyRoom\RetailStore\RetailStore\RetailStore\obj\Debug\RetailStore.Crystal_Reports.frmWarehouseReport.resources
+D:\StudyRoom\MyRoom\RetailStore\RetailStore\RetailStore\obj\Debug\RetailStore.Crystal_Reports.frmSalesReport.resources
+D:\StudyRoom\MyRoom\RetailStore\RetailStore\RetailStore\obj\Debug\RetailStore.Presentation_Layer.frmVendorSupplylist.resources
+C:\Documents and Settings\Prasanjit\My Documents\My Dropbox\RetailStore\RetailStore\bin\Debug\RetailStore.exe.config
+C:\Documents and Settings\Prasanjit\My Documents\My Dropbox\RetailStore\RetailStore\obj\Debug\Interop.MSACAL.dll
+C:\Documents and Settings\Prasanjit\My Documents\My Dropbox\RetailStore\RetailStore\obj\Debug\RetailStore.csproj.ResolveComReference.cache
+C:\Documents and Settings\Prasanjit\My Documents\My Dropbox\RetailStore\RetailStore\obj\Debug\RetailStore.exe
+C:\Documents and Settings\Prasanjit\My Documents\My Dropbox\RetailStore\RetailStore\obj\Debug\RetailStore.pdb
+C:\Documents and Settings\Prasanjit\My Documents\My Dropbox\RetailStore\RetailStore\bin\Debug\RetailStore.exe
+C:\Documents and Settings\Prasanjit\My Documents\My Dropbox\RetailStore\RetailStore\bin\Debug\RetailStore.pdb
+C:\Documents and Settings\Prasanjit\My Documents\My Dropbox\RetailStore\RetailStore\bin\Debug\Interop.MSACAL.dll
+C:\Documents and Settings\Prasanjit\My Documents\My Dropbox\RetailStore\RetailStore\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\Prasanjit\My Documents\My Dropbox\RetailStore\RetailStore\obj\Debug\RetailStore.Crystal_Reports.frmCustomerReport.resources
+C:\Documents and Settings\Prasanjit\My Documents\My Dropbox\RetailStore\RetailStore\obj\Debug\RetailStore.Crystal_Reports.frmProductReport.resources
+C:\Documents and Settings\Prasanjit\My Documents\My Dropbox\RetailStore\RetailStore\obj\Debug\RetailStore.Crystal_Reports.frmSalesReport.resources
+C:\Documents and Settings\Prasanjit\My Documents\My Dropbox\RetailStore\RetailStore\obj\Debug\RetailStore.Crystal_Reports.frmStockReport.resources
+C:\Documents and Settings\Prasanjit\My Documents\My Dropbox\RetailStore\RetailStore\obj\Debug\RetailStore.Crystal_Reports.frmPurchaseReport.resources
+C:\Documents and Settings\Prasanjit\My Documents\My Dropbox\RetailStore\RetailStore\obj\Debug\RetailStore.Crystal_Reports.frmVendorReport.resources
+C:\Documents and Settings\Prasanjit\My Documents\My Dropbox\RetailStore\RetailStore\obj\Debug\RetailStore.Crystal_Reports.frmWarehouseReport.resources
+C:\Documents and Settings\Prasanjit\My Documents\My Dropbox\RetailStore\RetailStore\obj\Debug\RetailStore.Presentation_Layer.frmListProducts.resources
+C:\Documents and Settings\Prasanjit\My Documents\My Dropbox\RetailStore\RetailStore\obj\Debug\RetailStore.Presentation_Layer.frmListVendors.resources
+C:\Documents and Settings\Prasanjit\My Documents\My Dropbox\RetailStore\RetailStore\obj\Debug\RetailStore.Presentation_Layer.frmListWarehouses.resources
+C:\Documents and Settings\Prasanjit\My Documents\My Dropbox\RetailStore\RetailStore\obj\Debug\RetailStore.frmnewsales_order.resources
+C:\Documents and Settings\Prasanjit\My Documents\My Dropbox\RetailStore\RetailStore\obj\Debug\RetailStore.frmaboutus.resources
+C:\Documents and Settings\Prasanjit\My Documents\My Dropbox\RetailStore\RetailStore\obj\Debug\RetailStore.Presentation_Layer.frmAddCustomers.resources
+C:\Documents and Settings\Prasanjit\My Documents\My Dropbox\RetailStore\RetailStore\obj\Debug\RetailStore.Presentation_Layer.frmAddProducts.resources
+C:\Documents and Settings\Prasanjit\My Documents\My Dropbox\RetailStore\RetailStore\obj\Debug\RetailStore.Presentation_Layer.frmAddUsers.resources
+C:\Documents and Settings\Prasanjit\My Documents\My Dropbox\RetailStore\RetailStore\obj\Debug\RetailStore.Presentation_Layer.frmAddVendors.resources
+C:\Documents and Settings\Prasanjit\My Documents\My Dropbox\RetailStore\RetailStore\obj\Debug\RetailStore.Presentation_Layer.frmChangePass.resources
+C:\Documents and Settings\Prasanjit\My Documents\My Dropbox\RetailStore\RetailStore\obj\Debug\RetailStore.frmLogin.resources
+C:\Documents and Settings\Prasanjit\My Documents\My Dropbox\RetailStore\RetailStore\obj\Debug\RetailStore.Presentation_Layer.frmMDI.resources
+C:\Documents and Settings\Prasanjit\My Documents\My Dropbox\RetailStore\RetailStore\obj\Debug\RetailStore.Presentation_Layer.frmNewPur_Order.resources
+C:\Documents and Settings\Prasanjit\My Documents\My Dropbox\RetailStore\RetailStore\obj\Debug\RetailStore.Presentation_Layer.frmSalary.resources
+C:\Documents and Settings\Prasanjit\My Documents\My Dropbox\RetailStore\RetailStore\obj\Debug\RetailStore.Presentation_Layer.frmListCustomers.resources
+C:\Documents and Settings\Prasanjit\My Documents\My Dropbox\RetailStore\RetailStore\obj\Debug\RetailStore.Presentation_Layer.frmListUsers.resources
+C:\Documents and Settings\Prasanjit\My Documents\My Dropbox\RetailStore\RetailStore\obj\Debug\RetailStore.Presentation_Layer.frmTimesheet.resources
+C:\Documents and Settings\Prasanjit\My Documents\My Dropbox\RetailStore\RetailStore\obj\Debug\RetailStore.Presentation_Layer.frmAddWarehouse.resources
+C:\Documents and Settings\Prasanjit\My Documents\My Dropbox\RetailStore\RetailStore\obj\Debug\RetailStore.Presentation_Layer.frmVendorSupplylist.resources
+C:\Documents and Settings\Prasanjit\My Documents\My Dropbox\RetailStore\RetailStore\obj\Debug\RetailStore.Properties.Resources.resources
+C:\Documents and Settings\Prasanjit\My Documents\My Dropbox\RetailStore\RetailStore\obj\Debug\RetailStore.csproj.GenerateResource.Cache
+E:\My Dropbox\RetailStore (1)\RetailStore\bin\Debug\RetailStore.exe.config
+E:\My Dropbox\RetailStore (1)\RetailStore\obj\Debug\RetailStore.csproj.ResolveComReference.cache
+E:\My Dropbox\RetailStore (1)\RetailStore\obj\Debug\RetailStore.exe
+E:\My Dropbox\RetailStore (1)\RetailStore\obj\Debug\RetailStore.pdb
+E:\My Dropbox\RetailStore (Prasanjit)\RetailStore\bin\Debug\RetailStore.exe.config
+E:\My Dropbox\RetailStore (Prasanjit)\RetailStore\obj\Debug\RetailStore.csproj.ResolveComReference.cache
+E:\My Dropbox\RetailStore (Prasanjit)\RetailStore\obj\Debug\RetailStore.exe
+E:\My Dropbox\RetailStore (Prasanjit)\RetailStore\obj\Debug\RetailStore.pdb
+E:\My Dropbox\RetailStore (Prasanjit)\RetailStore\bin\Debug\RetailStore.exe
+E:\My Dropbox\RetailStore (Prasanjit)\RetailStore\bin\Debug\RetailStore.pdb
+E:\My Dropbox\RetailStore (Prasanjit)\RetailStore\obj\Debug\ResolveAssemblyReference.cache
+E:\My Dropbox\RetailStore (Prasanjit)\RetailStore\obj\Debug\RetailStore.Crystal_Reports.frmCustomerReport.resources
+E:\My Dropbox\RetailStore (Prasanjit)\RetailStore\obj\Debug\RetailStore.Crystal_Reports.frmProductReport.resources
+E:\My Dropbox\RetailStore (Prasanjit)\RetailStore\obj\Debug\RetailStore.Crystal_Reports.frmSalesReport.resources
+E:\My Dropbox\RetailStore (Prasanjit)\RetailStore\obj\Debug\RetailStore.Crystal_Reports.frmStockReport.resources
+E:\My Dropbox\RetailStore (Prasanjit)\RetailStore\obj\Debug\RetailStore.Crystal_Reports.frmPurchaseReport.resources
+E:\My Dropbox\RetailStore (Prasanjit)\RetailStore\obj\Debug\RetailStore.Crystal_Reports.frmVendorReport.resources
+E:\My Dropbox\RetailStore (Prasanjit)\RetailStore\obj\Debug\RetailStore.Crystal_Reports.frmWarehouseReport.resources
+E:\My Dropbox\RetailStore (Prasanjit)\RetailStore\obj\Debug\RetailStore.Presentation_Layer.frmListProducts.resources
+E:\My Dropbox\RetailStore (Prasanjit)\RetailStore\obj\Debug\RetailStore.Presentation_Layer.frmListVendors.resources
+E:\My Dropbox\RetailStore (Prasanjit)\RetailStore\obj\Debug\RetailStore.Presentation_Layer.frmListWarehouses.resources
+E:\My Dropbox\RetailStore (Prasanjit)\RetailStore\obj\Debug\RetailStore.frmnewsales_order.resources
+E:\My Dropbox\RetailStore (Prasanjit)\RetailStore\obj\Debug\RetailStore.frmaboutus.resources
+E:\My Dropbox\RetailStore (Prasanjit)\RetailStore\obj\Debug\RetailStore.Presentation_Layer.frmAddCustomers.resources
+E:\My Dropbox\RetailStore (Prasanjit)\RetailStore\obj\Debug\RetailStore.Presentation_Layer.frmAddProducts.resources
+E:\My Dropbox\RetailStore (Prasanjit)\RetailStore\obj\Debug\RetailStore.Presentation_Layer.frmAddUsers.resources
+E:\My Dropbox\RetailStore (Prasanjit)\RetailStore\obj\Debug\RetailStore.Presentation_Layer.frmAddVendors.resources
+E:\My Dropbox\RetailStore (Prasanjit)\RetailStore\obj\Debug\RetailStore.Presentation_Layer.frmChangePass.resources
+E:\My Dropbox\RetailStore (Prasanjit)\RetailStore\obj\Debug\RetailStore.frmLogin.resources
+E:\My Dropbox\RetailStore (Prasanjit)\RetailStore\obj\Debug\RetailStore.Presentation_Layer.frmMDI.resources
+E:\My Dropbox\RetailStore (Prasanjit)\RetailStore\obj\Debug\RetailStore.Presentation_Layer.frmNewPur_Order.resources
+E:\My Dropbox\RetailStore (Prasanjit)\RetailStore\obj\Debug\RetailStore.Presentation_Layer.frmSalary.resources
+E:\My Dropbox\RetailStore (Prasanjit)\RetailStore\obj\Debug\RetailStore.Presentation_Layer.frmListCustomers.resources
+E:\My Dropbox\RetailStore (Prasanjit)\RetailStore\obj\Debug\RetailStore.Presentation_Layer.frmListUsers.resources
+E:\My Dropbox\RetailStore (Prasanjit)\RetailStore\obj\Debug\RetailStore.Presentation_Layer.frmTimesheet.resources
+E:\My Dropbox\RetailStore (Prasanjit)\RetailStore\obj\Debug\RetailStore.Presentation_Layer.frmAddWarehouse.resources
+E:\My Dropbox\RetailStore (Prasanjit)\RetailStore\obj\Debug\RetailStore.Presentation_Layer.frmVendorSupplylist.resources
+E:\My Dropbox\RetailStore (Prasanjit)\RetailStore\obj\Debug\RetailStore.Properties.Resources.resources
+E:\My Dropbox\RetailStore (Prasanjit)\RetailStore\obj\Debug\RetailStore.csproj.GenerateResource.Cache
+C:\RetailStore\RetailStore\bin\Debug\RetailStore.exe.config
+C:\RetailStore\RetailStore\obj\Debug\Interop.MSACAL.dll
+C:\RetailStore\RetailStore\obj\Debug\RetailStore.csproj.ResolveComReference.cache
+C:\RetailStore\RetailStore\obj\Debug\RetailStore.exe
+C:\RetailStore\RetailStore\obj\Debug\RetailStore.pdb
+C:\RetailStore\RetailStore\bin\Debug\RetailStore.exe
+C:\RetailStore\RetailStore\bin\Debug\RetailStore.pdb
+C:\RetailStore\RetailStore\bin\Debug\Interop.MSACAL.dll
+C:\RetailStore\RetailStore\obj\Debug\ResolveAssemblyReference.cache
+C:\RetailStore\RetailStore\obj\Debug\RetailStore.Crystal_Reports.frmCustomerReport.resources
+C:\RetailStore\RetailStore\obj\Debug\RetailStore.Crystal_Reports.frmProductReport.resources
+C:\RetailStore\RetailStore\obj\Debug\RetailStore.Crystal_Reports.frmSalesReport.resources
+C:\RetailStore\RetailStore\obj\Debug\RetailStore.Crystal_Reports.frmStockReport.resources
+C:\RetailStore\RetailStore\obj\Debug\RetailStore.Crystal_Reports.frmPurchaseReport.resources
+C:\RetailStore\RetailStore\obj\Debug\RetailStore.Crystal_Reports.frmVendorReport.resources
+C:\RetailStore\RetailStore\obj\Debug\RetailStore.Crystal_Reports.frmWarehouseReport.resources
+C:\RetailStore\RetailStore\obj\Debug\RetailStore.Presentation_Layer.frmListProducts.resources
+C:\RetailStore\RetailStore\obj\Debug\RetailStore.Presentation_Layer.frmListVendors.resources
+C:\RetailStore\RetailStore\obj\Debug\RetailStore.Presentation_Layer.frmListWarehouses.resources
+C:\RetailStore\RetailStore\obj\Debug\RetailStore.frmnewsales_order.resources
+C:\RetailStore\RetailStore\obj\Debug\RetailStore.frmaboutus.resources
+C:\RetailStore\RetailStore\obj\Debug\RetailStore.Presentation_Layer.frmAddCustomers.resources
+C:\RetailStore\RetailStore\obj\Debug\RetailStore.Presentation_Layer.frmAddProducts.resources
+C:\RetailStore\RetailStore\obj\Debug\RetailStore.Presentation_Layer.frmAddUsers.resources
+C:\RetailStore\RetailStore\obj\Debug\RetailStore.Presentation_Layer.frmAddVendors.resources
+C:\RetailStore\RetailStore\obj\Debug\RetailStore.Presentation_Layer.frmChangePass.resources
+C:\RetailStore\RetailStore\obj\Debug\RetailStore.frmLogin.resources
+C:\RetailStore\RetailStore\obj\Debug\RetailStore.Presentation_Layer.frmMDI.resources
+C:\RetailStore\RetailStore\obj\Debug\RetailStore.Presentation_Layer.frmNewPur_Order.resources
+C:\RetailStore\RetailStore\obj\Debug\RetailStore.Presentation_Layer.frmSalary.resources
+C:\RetailStore\RetailStore\obj\Debug\RetailStore.Presentation_Layer.frmListCustomers.resources
+C:\RetailStore\RetailStore\obj\Debug\RetailStore.Presentation_Layer.frmListUsers.resources
+C:\RetailStore\RetailStore\obj\Debug\RetailStore.Presentation_Layer.frmTimesheet.resources
+C:\RetailStore\RetailStore\obj\Debug\RetailStore.Presentation_Layer.frmAddWarehouse.resources
+C:\RetailStore\RetailStore\obj\Debug\RetailStore.Presentation_Layer.frmVendorSupplylist.resources
+C:\RetailStore\RetailStore\obj\Debug\RetailStore.Properties.Resources.resources
+C:\RetailStore\RetailStore\obj\Debug\RetailStore.csproj.GenerateResource.Cache
