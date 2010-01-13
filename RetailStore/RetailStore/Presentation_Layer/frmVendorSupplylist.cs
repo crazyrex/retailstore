@@ -25,8 +25,8 @@ namespace RetailStore.Presentation_Layer
         {
             d.loadTableIntoGrid("vendor_Supplylist", dgvSearchVendors);
             txtVendorId.TextChanged +=new EventHandler(txtVendorId_TextChanged);
-            txtVendorName.TextChanged +=new EventHandler(txtVendorName_TextChanged);
-            txtVendorName.Text = vendorName;
+            txtProductId.TextChanged +=new EventHandler(txtVendorName_TextChanged);
+            txtProductId.Text = vendorName;
         }
 
         private void txtVendorId_TextChanged(object sender, EventArgs e)
@@ -41,7 +41,7 @@ namespace RetailStore.Presentation_Layer
 
         private void txtVendorName_TextChanged(object sender, EventArgs e)
         {
-            dgvSearchVendors.DataSource = d.findRecordsLike("Vendor_Supplylist", "Product_ID", txtVendorName.Text);
+            dgvSearchVendors.DataSource = d.findRecordsLike("Vendor_Supplylist", "Product_ID", txtProductId.Text);
         }
     }
 }
