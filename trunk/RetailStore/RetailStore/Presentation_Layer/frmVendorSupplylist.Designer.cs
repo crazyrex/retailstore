@@ -29,6 +29,8 @@
         private void InitializeComponent()
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.txtVendorName = new System.Windows.Forms.TextBox();
+            this.lblVendorname = new System.Windows.Forms.Label();
             this.txtProductId = new System.Windows.Forms.TextBox();
             this.lblUsername = new System.Windows.Forms.Label();
             this.txtVendorId = new System.Windows.Forms.TextBox();
@@ -36,8 +38,6 @@
             this.lblinfo = new System.Windows.Forms.Label();
             this.dgvSearchVendors = new System.Windows.Forms.DataGridView();
             this.btnClose = new System.Windows.Forms.Button();
-            this.lblVendorname = new System.Windows.Forms.Label();
-            this.txtVendorName = new System.Windows.Forms.TextBox();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvSearchVendors)).BeginInit();
             this.SuspendLayout();
@@ -57,9 +57,27 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Search Criteria";
             // 
+            // txtVendorName
+            // 
+            this.txtVendorName.Location = new System.Drawing.Point(93, 63);
+            this.txtVendorName.MaxLength = 255;
+            this.txtVendorName.Name = "txtVendorName";
+            this.txtVendorName.Size = new System.Drawing.Size(175, 20);
+            this.txtVendorName.TabIndex = 4;
+            // 
+            // lblVendorname
+            // 
+            this.lblVendorname.AutoSize = true;
+            this.lblVendorname.Location = new System.Drawing.Point(15, 66);
+            this.lblVendorname.Name = "lblVendorname";
+            this.lblVendorname.Size = new System.Drawing.Size(72, 13);
+            this.lblVendorname.TabIndex = 3;
+            this.lblVendorname.Text = "Vendor Name";
+            // 
             // txtProductId
             // 
             this.txtProductId.Location = new System.Drawing.Point(93, 95);
+            this.txtProductId.MaxLength = 6;
             this.txtProductId.Name = "txtProductId";
             this.txtProductId.Size = new System.Drawing.Size(175, 20);
             this.txtProductId.TabIndex = 2;
@@ -77,6 +95,7 @@
             // txtVendorId
             // 
             this.txtVendorId.Location = new System.Drawing.Point(93, 30);
+            this.txtVendorId.MaxLength = 6;
             this.txtVendorId.Name = "txtVendorId";
             this.txtVendorId.Size = new System.Drawing.Size(175, 20);
             this.txtVendorId.TabIndex = 1;
@@ -119,22 +138,6 @@
             this.btnClose.Text = "Close";
             this.btnClose.UseVisualStyleBackColor = true;
             this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
-            // 
-            // lblVendorname
-            // 
-            this.lblVendorname.AutoSize = true;
-            this.lblVendorname.Location = new System.Drawing.Point(15, 66);
-            this.lblVendorname.Name = "lblVendorname";
-            this.lblVendorname.Size = new System.Drawing.Size(72, 13);
-            this.lblVendorname.TabIndex = 3;
-            this.lblVendorname.Text = "Vendor Name";
-            // 
-            // txtVendorName
-            // 
-            this.txtVendorName.Location = new System.Drawing.Point(93, 63);
-            this.txtVendorName.Name = "txtVendorName";
-            this.txtVendorName.Size = new System.Drawing.Size(175, 20);
-            this.txtVendorName.TabIndex = 4;
             // 
             // frmVendorSupplylist
             // 

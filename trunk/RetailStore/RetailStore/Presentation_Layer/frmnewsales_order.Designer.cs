@@ -129,6 +129,7 @@
             // txtSalesId
             // 
             this.txtSalesId.Location = new System.Drawing.Point(105, 24);
+            this.txtSalesId.MaxLength = 6;
             this.txtSalesId.Name = "txtSalesId";
             this.txtSalesId.Size = new System.Drawing.Size(140, 20);
             this.txtSalesId.TabIndex = 1;

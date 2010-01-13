@@ -94,6 +94,7 @@ namespace RetailStore.Presentation_Layer
             // txtUserId
             // 
             this.txtUserId.Location = new System.Drawing.Point(112, 44);
+            this.txtUserId.MaxLength = 6;
             this.txtUserId.Name = "txtUserId";
             this.txtUserId.Size = new System.Drawing.Size(100, 20);
             this.txtUserId.TabIndex = 1;
@@ -101,6 +102,7 @@ namespace RetailStore.Presentation_Layer
             // txtUserName
             // 
             this.txtUserName.Location = new System.Drawing.Point(112, 70);
+            this.txtUserName.MaxLength = 255;
             this.txtUserName.Name = "txtUserName";
             this.txtUserName.Size = new System.Drawing.Size(170, 20);
             this.txtUserName.TabIndex = 2;
@@ -118,6 +120,7 @@ namespace RetailStore.Presentation_Layer
             // txtPass
             // 
             this.txtPass.Location = new System.Drawing.Point(112, 97);
+            this.txtPass.MaxLength = 255;
             this.txtPass.Name = "txtPass";
             this.txtPass.PasswordChar = '*';
             this.txtPass.Size = new System.Drawing.Size(170, 20);
@@ -149,6 +152,7 @@ namespace RetailStore.Presentation_Layer
             // txtAddress3
             // 
             this.txtAddress3.Location = new System.Drawing.Point(79, 75);
+            this.txtAddress3.MaxLength = 255;
             this.txtAddress3.Name = "txtAddress3";
             this.txtAddress3.Size = new System.Drawing.Size(190, 20);
             this.txtAddress3.TabIndex = 6;
@@ -156,6 +160,7 @@ namespace RetailStore.Presentation_Layer
             // txtAddress2
             // 
             this.txtAddress2.Location = new System.Drawing.Point(79, 47);
+            this.txtAddress2.MaxLength = 255;
             this.txtAddress2.Name = "txtAddress2";
             this.txtAddress2.Size = new System.Drawing.Size(190, 20);
             this.txtAddress2.TabIndex = 5;
@@ -181,6 +186,7 @@ namespace RetailStore.Presentation_Layer
             // txtCountry
             // 
             this.txtCountry.Location = new System.Drawing.Point(79, 191);
+            this.txtCountry.MaxLength = 255;
             this.txtCountry.Name = "txtCountry";
             this.txtCountry.Size = new System.Drawing.Size(190, 20);
             this.txtCountry.TabIndex = 10;
@@ -197,6 +203,7 @@ namespace RetailStore.Presentation_Layer
             // txtState
             // 
             this.txtState.Location = new System.Drawing.Point(79, 161);
+            this.txtState.MaxLength = 255;
             this.txtState.Name = "txtState";
             this.txtState.Size = new System.Drawing.Size(190, 20);
             this.txtState.TabIndex = 9;
@@ -213,6 +220,7 @@ namespace RetailStore.Presentation_Layer
             // txtPin
             // 
             this.txtPin.Location = new System.Drawing.Point(79, 132);
+            this.txtPin.MaxLength = 6;
             this.txtPin.Name = "txtPin";
             this.txtPin.Size = new System.Drawing.Size(190, 20);
             this.txtPin.TabIndex = 8;
@@ -229,6 +237,7 @@ namespace RetailStore.Presentation_Layer
             // txtCity
             // 
             this.txtCity.Location = new System.Drawing.Point(79, 104);
+            this.txtCity.MaxLength = 255;
             this.txtCity.Name = "txtCity";
             this.txtCity.Size = new System.Drawing.Size(190, 20);
             this.txtCity.TabIndex = 7;
@@ -245,6 +254,7 @@ namespace RetailStore.Presentation_Layer
             // txtAddress1
             // 
             this.txtAddress1.Location = new System.Drawing.Point(79, 21);
+            this.txtAddress1.MaxLength = 255;
             this.txtAddress1.Name = "txtAddress1";
             this.txtAddress1.Size = new System.Drawing.Size(190, 20);
             this.txtAddress1.TabIndex = 4;
@@ -274,6 +284,7 @@ namespace RetailStore.Presentation_Layer
             // txtEmail
             // 
             this.txtEmail.Location = new System.Drawing.Point(63, 54);
+            this.txtEmail.MaxLength = 255;
             this.txtEmail.Name = "txtEmail";
             this.txtEmail.Size = new System.Drawing.Size(148, 20);
             this.txtEmail.TabIndex = 12;
@@ -290,6 +301,7 @@ namespace RetailStore.Presentation_Layer
             // txtPhone
             // 
             this.txtPhone.Location = new System.Drawing.Point(63, 19);
+            this.txtPhone.MaxLength = 11;
             this.txtPhone.Name = "txtPhone";
             this.txtPhone.Size = new System.Drawing.Size(148, 20);
             this.txtPhone.TabIndex = 11;

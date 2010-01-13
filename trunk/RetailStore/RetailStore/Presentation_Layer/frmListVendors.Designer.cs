@@ -56,6 +56,7 @@
             // txtVendorName
             // 
             this.txtVendorName.Location = new System.Drawing.Point(93, 68);
+            this.txtVendorName.MaxLength = 255;
             this.txtVendorName.Name = "txtVendorName";
             this.txtVendorName.Size = new System.Drawing.Size(175, 20);
             this.txtVendorName.TabIndex = 2;
@@ -73,6 +74,7 @@
             // txtVendorId
             // 
             this.txtVendorId.Location = new System.Drawing.Point(93, 30);
+            this.txtVendorId.MaxLength = 6;
             this.txtVendorId.Name = "txtVendorId";
             this.txtVendorId.Size = new System.Drawing.Size(175, 20);
             this.txtVendorId.TabIndex = 1;

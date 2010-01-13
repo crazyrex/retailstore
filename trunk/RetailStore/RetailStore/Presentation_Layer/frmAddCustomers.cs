@@ -11,6 +11,8 @@ namespace RetailStore.Presentation_Layer
     public partial class frmAddCustomers : Form
     {
         DAL d = new DAL();
+        IVAL i = new IVAL();
+        Boolean b;
         public frmAddCustomers()
         {
             InitializeComponent();
@@ -37,10 +39,18 @@ namespace RetailStore.Presentation_Layer
         private void btnadd_Click(object sender, EventArgs e)
         {
             //txtCustId.Text = d.autoGenerateID("Entity", "ID", "Customer");
-            d.addEntityInfo(txtCustId.Text, txtCustName.Text, txtPhone.Text, txtEmail.Text, "Customer");
-            d.addEntityAddress(txtCustId.Text, txtAddress1.Text, txtAddress2.Text, txtAddress3.Text, txtCity.Text, txtPin.Text, txtState.Text, txtCountry.Text);
-            clearTxt();
-            MessageBox.Show("Customer Added");
+            emptyCheck();
+            if (b)
+            {
+                MessageBox.Show("Please complete all the fields");
+            }
+            else
+            {
+                d.addEntityInfo(txtCustId.Text, txtCustName.Text, txtPhone.Text, txtEmail.Text, "Customer");
+                d.addEntityAddress(txtCustId.Text, txtAddress1.Text, txtAddress2.Text, txtAddress3.Text, txtCity.Text, txtPin.Text, txtState.Text, txtCountry.Text);
+                clearTxt();
+                MessageBox.Show("Customer Added");
+            }
         }
 
         void txtCustId_TextChanged(object sender, EventArgs e)
@@ -68,6 +78,53 @@ namespace RetailStore.Presentation_Layer
             txtCountry.Text = "";
           
         }
-
+        public Boolean emptyCheck()
+        {
+            b=false;
+            if (i.emptyCheck(txtCustId.Text))
+            {
+               b = true;
+            }
+            if (i.emptyCheck(txtCustName.Text))
+            {
+                b = true;
+            }
+            if(i.emptyCheck(txtAddress1.Text))
+            {
+                b = true;
+            }
+            if (i.emptyCheck(txtAddress2.Text))
+            {
+                b = true;
+            }
+            if (i.emptyCheck(txtAddress3.Text))
+            {
+                b = true;
+            }
+            if (i.emptyCheck(txtCity.Text))
+            {
+                b = true;
+            }
+            if (i.emptyCheck(txtCountry.Text))
+            {                b = true;
+            }
+            if (i.emptyCheck(txtPin.Text))
+            {
+                b = true;
+            }
+            if (i.emptyCheck(txtState.Text))
+            {
+                b = true;
+            }
+            if (i.emptyCheck(txtPhone.Text))
+            {
+                b = true;
+            }
+            if (i.emptyCheck(txtEmail.Text))
+            {
+                b = true;
+            }
+            return b;
+        }
     }
 }
