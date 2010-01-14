@@ -60,6 +60,23 @@
             // txtVendorName
             // 
             this.txtVendorName.Location = new System.Drawing.Point(93, 63);
+            this.txtVendorName.Name = "txtVendorName";
+            this.txtVendorName.Size = new System.Drawing.Size(175, 20);
+            this.txtVendorName.TabIndex = 4;
+            this.txtVendorName.TextChanged += new System.EventHandler(this.txtVendorName_TextChanged);
+            // 
+            // lblVendorname
+            // 
+            this.lblVendorname.AutoSize = true;
+            this.lblVendorname.Location = new System.Drawing.Point(15, 66);
+            this.lblVendorname.Name = "lblVendorname";
+            this.lblVendorname.Size = new System.Drawing.Size(72, 13);
+            this.lblVendorname.TabIndex = 3;
+            this.lblVendorname.Text = "Vendor Name";
+            // 
+            // txtVendorName
+            // 
+            this.txtVendorName.Location = new System.Drawing.Point(93, 63);
             this.txtVendorName.MaxLength = 255;
             this.txtVendorName.Name = "txtVendorName";
             this.txtVendorName.Size = new System.Drawing.Size(175, 20);
@@ -81,7 +98,7 @@
             this.txtProductId.Name = "txtProductId";
             this.txtProductId.Size = new System.Drawing.Size(175, 20);
             this.txtProductId.TabIndex = 2;
-            this.txtProductId.TextChanged += new System.EventHandler(this.txtVendorName_TextChanged);
+            this.txtProductId.TextChanged += new System.EventHandler(this.txtProductId_TextChanged);
             // 
             // lblUsername
             // 

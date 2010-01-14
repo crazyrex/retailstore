@@ -259,6 +259,7 @@ namespace RetailStore
             string q = string.Format("SELECT  sorders_details.so_id,sorders_details.cust_id,sorders_items.product_id,sorders_items.qty,sorders_items.price,sorders_details.total,sorder_history.so_date FROM sorders_details,sorders_items,sorder_history WHERE (sorders_details.so_id=sorders_items.so_id) AND (sorders_details.so_id=sorder_history.so_id)");
             return this.executeSelectStmt(q);
         }
+
         public DataTable populateCombo(string tablename, string columname)
         {
             /*
@@ -267,13 +268,21 @@ namespace RetailStore
             string q = string.Format("SELECT {0} FROM {1}", columname, tablename);
             return this.executeSelectStmt(q);
         }
-        public DataTable populateCombo(string tablename, string columnname, string conditionCol, string conditionText)
+
+        public DataTable populateCombo(string tableName, string columnName, string condCol, string condText)
         {
             /*
               This function fills combobox with data
           */
-            string q = string.Format("SELECT {0} FROM {1} WHERE {2}='{3}'", columnname, tablename, conditionCol, conditionText);
+            string q = string.Format("SELECT {0} FROM {1} WHERE {2}='{3}'", columnName, tableName, condCol, condText);
             return this.executeSelectStmt(q);
+        }
+
+        public void loadTablesJoinIntoGrid(string tableName1, string tableName2, string colName1, string colName2, string field1, string valueLike1, string field2, string valueLike2, string field3, string valueLike3, DataGridView dgv)
+        {
+
+            string q = string.Format("SELECT * FROM {0} INNER JOIN {1} ON {0}.{2} = {1}.{3} WHERE {0}.{4} LIKE \"%{5}%\" AND {0}.{6} LIKE \"%{7}%\"  AND {1}.{8} LIKE \"%{9}%\"  ", tableName1, tableName2, colName1, colName2, field1, valueLike1, field2, valueLike2, field3, valueLike3);
+            dgv.DataSource = this.executeSelectStmt(q);
         }
     }
 
