@@ -280,7 +280,7 @@ namespace RetailStore
 
         public void loadTablesJoinIntoGrid(string tableName1, string tableName2, string colName1, string colName2, string field1, string valueLike1, string field2, string valueLike2, string field3, string valueLike3, DataGridView dgv)
         {
-
+            // Loads The DATAGRIDVIEW by Filtering the DATAGRIDVIEW Data according valueLike arguments
             string q = string.Format("SELECT * FROM {0} INNER JOIN {1} ON {0}.{2} = {1}.{3} WHERE {0}.{4} LIKE \"%{5}%\" AND {0}.{6} LIKE \"%{7}%\"  AND {1}.{8} LIKE \"%{9}%\"  ", tableName1, tableName2, colName1, colName2, field1, valueLike1, field2, valueLike2, field3, valueLike3);
             dgv.DataSource = this.executeSelectStmt(q);
         }
