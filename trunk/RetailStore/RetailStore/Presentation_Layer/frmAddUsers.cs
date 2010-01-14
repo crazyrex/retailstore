@@ -10,7 +10,9 @@ namespace RetailStore.Presentation_Layer
 {
     public partial class frmAddUsers : Form
     {
-        private DAL d=new DAL();
+        DAL d=new DAL();
+        REVAL r = new REVAL();
+        Boolean b;
         public frmAddUsers()
         {
             InitializeComponent();
@@ -29,11 +31,18 @@ namespace RetailStore.Presentation_Layer
 
         private void btnadd_Click(object sender, EventArgs e)
         {
-            //txtUserId.Text = d.autoGenerateID("Entity", "ID", "Employee");
-            d.addEntityInfo(txtUserId.Text, txtUserName.Text, txtPhone.Text, txtEmail.Text, "User");
-            d.addEntityAddress(txtUserId.Text, txtAddress1.Text, txtAddress2.Text, txtAddress3.Text, txtCity.Text, txtPin.Text, txtState.Text, txtCountry.Text);
-            clearTxt();
-            MessageBox.Show("User added");
+            validateInput();
+            if (b)
+            {
+                MessageBox.Show("Please enter all fields with proper values");
+            }
+            else
+            {
+                d.addEntityInfo(txtUserId.Text, txtUserName.Text, txtPhone.Text, txtEmail.Text, "User");
+                d.addEntityAddress(txtUserId.Text, txtAddress1.Text, txtAddress2.Text, txtAddress3.Text, txtCity.Text, txtPin.Text, txtState.Text, txtCountry.Text);
+                clearTxt();
+                MessageBox.Show("User added");
+            }
         }
 
         private void txtUserName_TextChanged(object sender, EventArgs e)
@@ -58,6 +67,23 @@ namespace RetailStore.Presentation_Layer
             txtPin.Text = "";
             txtState.Text = "";
             txtCountry.Text = "";
+        }
+        public Boolean validateInput()
+        {
+            b = false;
+            if (r.emptyCheck(txtUserId.Text) && r.emptyCheck(txtUserName.Text) && r.emptyCheck(txtAddress1.Text) && r.emptyCheck(txtAddress2.Text) && r.emptyCheck(txtAddress3.Text) && r.emptyCheck(txtCity.Text) && r.emptyCheck(txtState.Text) && r.emptyCheck(txtPin.Text) && r.emptyCheck(txtCountry.Text) && r.emptyCheck(txtPhone.Text) && r.emptyCheck(txtEmail.Text))
+            {
+                b = true;
+            }
+            if (r.numCheck(txtPhone.Text) && r.numCheck(txtPin.Text))
+            {
+                b = true;
+            }
+            if (r.charCheck(txtUserName.Text) && r.charCheck(txtCity.Text) && r.charCheck(txtState.Text) && r.charCheck(txtCountry.Text))
+            {
+                b = true;
+            }
+            return b;
         }
         
     }
