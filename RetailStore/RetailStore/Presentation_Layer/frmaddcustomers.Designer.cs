@@ -145,7 +145,7 @@ namespace RetailStore.Presentation_Layer
             this.lblAddress2.Size = new System.Drawing.Size(36, 13);
             this.lblAddress2.TabIndex = 21;
             this.lblAddress2.Text = "Line 2";
-            this.lblAddress2.Click += new System.EventHandler(this.label3_Click);
+            
             // 
             // txtAddress3
             // 

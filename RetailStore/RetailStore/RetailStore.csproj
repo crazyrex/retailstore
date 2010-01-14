@@ -54,6 +54,7 @@
     <Reference Include="CrystalDecisions.ReportSource, Version=10.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
     <Reference Include="CrystalDecisions.Shared, Version=10.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
     <Reference Include="CrystalDecisions.Windows.Forms, Version=10.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="Microsoft.VisualBasic" />
     <Reference Include="System" />
     <Reference Include="System.Configuration" />
     <Reference Include="System.Data" />
@@ -162,6 +163,7 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>datasetRetailStore.xsd</DependentUpon>
     </Compile>
+    <Compile Include="REVAL.cs" />
     <Compile Include="Presentation_Layer\frmListProducts.cs">
       <SubType>Form</SubType>
     </Compile>

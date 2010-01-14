@@ -11,16 +11,12 @@ namespace RetailStore.Presentation_Layer
     public partial class frmAddCustomers : Form
     {
         DAL d = new DAL();
-        IVAL i = new IVAL();
+        REVAL i = new REVAL();
         Boolean b;
+
         public frmAddCustomers()
         {
             InitializeComponent();
-        }
-
-        private void label3_Click(object sender, EventArgs e)
-        {
-
         }
 
         private void btncancel_Click(object sender, EventArgs e)
@@ -38,11 +34,10 @@ namespace RetailStore.Presentation_Layer
 
         private void btnadd_Click(object sender, EventArgs e)
         {
-            //txtCustId.Text = d.autoGenerateID("Entity", "ID", "Customer");
-            emptyCheck();
+            validateInput();
             if (b)
             {
-                MessageBox.Show("Please complete all the fields");
+                MessageBox.Show("Please enter all fields with proper values");
             }
             else
             {
@@ -58,11 +53,11 @@ namespace RetailStore.Presentation_Layer
             dgvCustomers.DataSource = d.findRecordsLike("Entity", "Role", "Customer", "ID", txtCustId.Text);
         }
 
-
         void txtCustName_TextChanged(object sender, EventArgs e)
         {
             dgvCustomers.DataSource = d.findRecordsLike("Entity", "Role", "Customer", "Name", txtCustName.Text);
         }
+
         private void clearTxt()
         {
             txtCustId.Text= "";
@@ -78,7 +73,8 @@ namespace RetailStore.Presentation_Layer
             txtCountry.Text = "";
           
         }
-        public Boolean emptyCheck()
+
+        public Boolean validateInput()
         {
             b=false;
             if (i.emptyCheck(txtCustId.Text))
@@ -124,7 +120,31 @@ namespace RetailStore.Presentation_Layer
             {
                 b = true;
             }
+            if (i.numCheck(txtPhone.Text))
+            {
+                b = true;
+            }
+            if (i.numCheck(txtPin.Text))
+            {
+                b = true;
+            }
+            if (i.charCheck(txtCustName.Text))
+            {
+                b = true;
+            }
+            if (i.charCheck(txtCity.Text))
+            {
+                b = true;
+            }
+            if (i.charCheck(txtState.Text))
+            {
+                b = true;
+            }
+            if (i.charCheck(txtCountry.Text))
+            {
+                b = true;
+            }
             return b;
         }
-    }
+   }
 }

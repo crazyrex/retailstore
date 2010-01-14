@@ -39,6 +39,8 @@ namespace RetailStore {
         
         private SalesDataTable tableSales;
         
+        private Purchase_RecieptDataTable tablePurchase_Reciept;
+        
         private global::System.Data.SchemaSerializationMode _schemaSerializationMode = global::System.Data.SchemaSerializationMode.IncludeSchema;
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -85,6 +87,9 @@ namespace RetailStore {
                 }
                 if ((ds.Tables["Sales"] != null)) {
                     base.Tables.Add(new SalesDataTable(ds.Tables["Sales"]));
+                }
+                if ((ds.Tables["Purchase Reciept"] != null)) {
+                    base.Tables.Add(new Purchase_RecieptDataTable(ds.Tables["Purchase Reciept"]));
                 }
                 this.DataSetName = ds.DataSetName;
                 this.Prefix = ds.Prefix;
@@ -168,6 +173,15 @@ namespace RetailStore {
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.ComponentModel.Browsable(false)]
+        [global::System.ComponentModel.DesignerSerializationVisibility(global::System.ComponentModel.DesignerSerializationVisibility.Content)]
+        public Purchase_RecieptDataTable Purchase_Reciept {
+            get {
+                return this.tablePurchase_Reciept;
+            }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.ComponentModel.BrowsableAttribute(true)]
         [global::System.ComponentModel.DesignerSerializationVisibilityAttribute(global::System.ComponentModel.DesignerSerializationVisibility.Visible)]
         public override global::System.Data.SchemaSerializationMode SchemaSerializationMode {
@@ -247,6 +261,9 @@ namespace RetailStore {
                 if ((ds.Tables["Sales"] != null)) {
                     base.Tables.Add(new SalesDataTable(ds.Tables["Sales"]));
                 }
+                if ((ds.Tables["Purchase Reciept"] != null)) {
+                    base.Tables.Add(new Purchase_RecieptDataTable(ds.Tables["Purchase Reciept"]));
+                }
                 this.DataSetName = ds.DataSetName;
                 this.Prefix = ds.Prefix;
                 this.Namespace = ds.Namespace;
@@ -319,6 +336,12 @@ namespace RetailStore {
                     this.tableSales.InitVars();
                 }
             }
+            this.tablePurchase_Reciept = ((Purchase_RecieptDataTable)(base.Tables["Purchase Reciept"]));
+            if ((initTable == true)) {
+                if ((this.tablePurchase_Reciept != null)) {
+                    this.tablePurchase_Reciept.InitVars();
+                }
+            }
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -342,6 +365,8 @@ namespace RetailStore {
             base.Tables.Add(this.tableCustomer);
             this.tableSales = new SalesDataTable();
             base.Tables.Add(this.tableSales);
+            this.tablePurchase_Reciept = new Purchase_RecieptDataTable();
+            base.Tables.Add(this.tablePurchase_Reciept);
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -376,6 +401,11 @@ namespace RetailStore {
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         private bool ShouldSerializeSales() {
+            return false;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        private bool ShouldSerializePurchase_Reciept() {
             return false;
         }
         
@@ -445,6 +475,8 @@ namespace RetailStore {
         public delegate void CustomerRowChangeEventHandler(object sender, CustomerRowChangeEvent e);
         
         public delegate void SalesRowChangeEventHandler(object sender, SalesRowChangeEvent e);
+        
+        public delegate void Purchase_RecieptRowChangeEventHandler(object sender, Purchase_RecieptRowChangeEvent e);
         
         /// <summary>
         ///Represents the strongly named DataTable class.
@@ -2550,6 +2582,351 @@ namespace RetailStore {
         }
         
         /// <summary>
+        ///Represents the strongly named DataTable class.
+        ///</summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "2.0.0.0")]
+        [global::System.Serializable()]
+        [global::System.Xml.Serialization.XmlSchemaProviderAttribute("GetTypedTableSchema")]
+        public partial class Purchase_RecieptDataTable : global::System.Data.DataTable, global::System.Collections.IEnumerable {
+            
+            private global::System.Data.DataColumn columnDataColumn1;
+            
+            private global::System.Data.DataColumn columnDataColumn2;
+            
+            private global::System.Data.DataColumn columnDataColumn3;
+            
+            private global::System.Data.DataColumn columnDataColumn4;
+            
+            private global::System.Data.DataColumn columnDataColumn5;
+            
+            private global::System.Data.DataColumn columnDataColumn6;
+            
+            private global::System.Data.DataColumn columnDataColumn7;
+            
+            private global::System.Data.DataColumn columnDataColumn8;
+            
+            private global::System.Data.DataColumn columnDataColumn9;
+            
+            private global::System.Data.DataColumn columnDataColumn10;
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            public Purchase_RecieptDataTable() {
+                this.TableName = "Purchase Reciept";
+                this.BeginInit();
+                this.InitClass();
+                this.EndInit();
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            internal Purchase_RecieptDataTable(global::System.Data.DataTable table) {
+                this.TableName = table.TableName;
+                if ((table.CaseSensitive != table.DataSet.CaseSensitive)) {
+                    this.CaseSensitive = table.CaseSensitive;
+                }
+                if ((table.Locale.ToString() != table.DataSet.Locale.ToString())) {
+                    this.Locale = table.Locale;
+                }
+                if ((table.Namespace != table.DataSet.Namespace)) {
+                    this.Namespace = table.Namespace;
+                }
+                this.Prefix = table.Prefix;
+                this.MinimumCapacity = table.MinimumCapacity;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            protected Purchase_RecieptDataTable(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
+                    base(info, context) {
+                this.InitVars();
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            public global::System.Data.DataColumn DataColumn1Column {
+                get {
+                    return this.columnDataColumn1;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            public global::System.Data.DataColumn DataColumn2Column {
+                get {
+                    return this.columnDataColumn2;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            public global::System.Data.DataColumn DataColumn3Column {
+                get {
+                    return this.columnDataColumn3;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            public global::System.Data.DataColumn DataColumn4Column {
+                get {
+                    return this.columnDataColumn4;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            public global::System.Data.DataColumn DataColumn5Column {
+                get {
+                    return this.columnDataColumn5;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            public global::System.Data.DataColumn DataColumn6Column {
+                get {
+                    return this.columnDataColumn6;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            public global::System.Data.DataColumn DataColumn7Column {
+                get {
+                    return this.columnDataColumn7;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            public global::System.Data.DataColumn DataColumn8Column {
+                get {
+                    return this.columnDataColumn8;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            public global::System.Data.DataColumn DataColumn9Column {
+                get {
+                    return this.columnDataColumn9;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            public global::System.Data.DataColumn DataColumn10Column {
+                get {
+                    return this.columnDataColumn10;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.ComponentModel.Browsable(false)]
+            public int Count {
+                get {
+                    return this.Rows.Count;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            public Purchase_RecieptRow this[int index] {
+                get {
+                    return ((Purchase_RecieptRow)(this.Rows[index]));
+                }
+            }
+            
+            public event Purchase_RecieptRowChangeEventHandler Purchase_RecieptRowChanging;
+            
+            public event Purchase_RecieptRowChangeEventHandler Purchase_RecieptRowChanged;
+            
+            public event Purchase_RecieptRowChangeEventHandler Purchase_RecieptRowDeleting;
+            
+            public event Purchase_RecieptRowChangeEventHandler Purchase_RecieptRowDeleted;
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            public void AddPurchase_RecieptRow(Purchase_RecieptRow row) {
+                this.Rows.Add(row);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            public Purchase_RecieptRow AddPurchase_RecieptRow(string DataColumn1, string DataColumn2, string DataColumn3, string DataColumn4, string DataColumn5, string DataColumn6, string DataColumn7, string DataColumn8, string DataColumn9, string DataColumn10) {
+                Purchase_RecieptRow rowPurchase_RecieptRow = ((Purchase_RecieptRow)(this.NewRow()));
+                object[] columnValuesArray = new object[] {
+                        DataColumn1,
+                        DataColumn2,
+                        DataColumn3,
+                        DataColumn4,
+                        DataColumn5,
+                        DataColumn6,
+                        DataColumn7,
+                        DataColumn8,
+                        DataColumn9,
+                        DataColumn10};
+                rowPurchase_RecieptRow.ItemArray = columnValuesArray;
+                this.Rows.Add(rowPurchase_RecieptRow);
+                return rowPurchase_RecieptRow;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            public virtual global::System.Collections.IEnumerator GetEnumerator() {
+                return this.Rows.GetEnumerator();
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            public override global::System.Data.DataTable Clone() {
+                Purchase_RecieptDataTable cln = ((Purchase_RecieptDataTable)(base.Clone()));
+                cln.InitVars();
+                return cln;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            protected override global::System.Data.DataTable CreateInstance() {
+                return new Purchase_RecieptDataTable();
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            internal void InitVars() {
+                this.columnDataColumn1 = base.Columns["DataColumn1"];
+                this.columnDataColumn2 = base.Columns["DataColumn2"];
+                this.columnDataColumn3 = base.Columns["DataColumn3"];
+                this.columnDataColumn4 = base.Columns["DataColumn4"];
+                this.columnDataColumn5 = base.Columns["DataColumn5"];
+                this.columnDataColumn6 = base.Columns["DataColumn6"];
+                this.columnDataColumn7 = base.Columns["DataColumn7"];
+                this.columnDataColumn8 = base.Columns["DataColumn8"];
+                this.columnDataColumn9 = base.Columns["DataColumn9"];
+                this.columnDataColumn10 = base.Columns["DataColumn10"];
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            private void InitClass() {
+                this.columnDataColumn1 = new global::System.Data.DataColumn("DataColumn1", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnDataColumn1);
+                this.columnDataColumn2 = new global::System.Data.DataColumn("DataColumn2", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnDataColumn2);
+                this.columnDataColumn3 = new global::System.Data.DataColumn("DataColumn3", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnDataColumn3);
+                this.columnDataColumn4 = new global::System.Data.DataColumn("DataColumn4", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnDataColumn4);
+                this.columnDataColumn5 = new global::System.Data.DataColumn("DataColumn5", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnDataColumn5);
+                this.columnDataColumn6 = new global::System.Data.DataColumn("DataColumn6", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnDataColumn6);
+                this.columnDataColumn7 = new global::System.Data.DataColumn("DataColumn7", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnDataColumn7);
+                this.columnDataColumn8 = new global::System.Data.DataColumn("DataColumn8", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnDataColumn8);
+                this.columnDataColumn9 = new global::System.Data.DataColumn("DataColumn9", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnDataColumn9);
+                this.columnDataColumn10 = new global::System.Data.DataColumn("DataColumn10", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnDataColumn10);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            public Purchase_RecieptRow NewPurchase_RecieptRow() {
+                return ((Purchase_RecieptRow)(this.NewRow()));
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            protected override global::System.Data.DataRow NewRowFromBuilder(global::System.Data.DataRowBuilder builder) {
+                return new Purchase_RecieptRow(builder);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            protected override global::System.Type GetRowType() {
+                return typeof(Purchase_RecieptRow);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            protected override void OnRowChanged(global::System.Data.DataRowChangeEventArgs e) {
+                base.OnRowChanged(e);
+                if ((this.Purchase_RecieptRowChanged != null)) {
+                    this.Purchase_RecieptRowChanged(this, new Purchase_RecieptRowChangeEvent(((Purchase_RecieptRow)(e.Row)), e.Action));
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            protected override void OnRowChanging(global::System.Data.DataRowChangeEventArgs e) {
+                base.OnRowChanging(e);
+                if ((this.Purchase_RecieptRowChanging != null)) {
+                    this.Purchase_RecieptRowChanging(this, new Purchase_RecieptRowChangeEvent(((Purchase_RecieptRow)(e.Row)), e.Action));
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            protected override void OnRowDeleted(global::System.Data.DataRowChangeEventArgs e) {
+                base.OnRowDeleted(e);
+                if ((this.Purchase_RecieptRowDeleted != null)) {
+                    this.Purchase_RecieptRowDeleted(this, new Purchase_RecieptRowChangeEvent(((Purchase_RecieptRow)(e.Row)), e.Action));
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            protected override void OnRowDeleting(global::System.Data.DataRowChangeEventArgs e) {
+                base.OnRowDeleting(e);
+                if ((this.Purchase_RecieptRowDeleting != null)) {
+                    this.Purchase_RecieptRowDeleting(this, new Purchase_RecieptRowChangeEvent(((Purchase_RecieptRow)(e.Row)), e.Action));
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            public void RemovePurchase_RecieptRow(Purchase_RecieptRow row) {
+                this.Rows.Remove(row);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
+                global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
+                global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
+                datasetRetailStore ds = new datasetRetailStore();
+                global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
+                any1.Namespace = "http://www.w3.org/2001/XMLSchema";
+                any1.MinOccurs = new decimal(0);
+                any1.MaxOccurs = decimal.MaxValue;
+                any1.ProcessContents = global::System.Xml.Schema.XmlSchemaContentProcessing.Lax;
+                sequence.Items.Add(any1);
+                global::System.Xml.Schema.XmlSchemaAny any2 = new global::System.Xml.Schema.XmlSchemaAny();
+                any2.Namespace = "urn:schemas-microsoft-com:xml-diffgram-v1";
+                any2.MinOccurs = new decimal(1);
+                any2.ProcessContents = global::System.Xml.Schema.XmlSchemaContentProcessing.Lax;
+                sequence.Items.Add(any2);
+                global::System.Xml.Schema.XmlSchemaAttribute attribute1 = new global::System.Xml.Schema.XmlSchemaAttribute();
+                attribute1.Name = "namespace";
+                attribute1.FixedValue = ds.Namespace;
+                type.Attributes.Add(attribute1);
+                global::System.Xml.Schema.XmlSchemaAttribute attribute2 = new global::System.Xml.Schema.XmlSchemaAttribute();
+                attribute2.Name = "tableTypeName";
+                attribute2.FixedValue = "Purchase_RecieptDataTable";
+                type.Attributes.Add(attribute2);
+                type.Particle = sequence;
+                global::System.Xml.Schema.XmlSchema dsSchema = ds.GetSchemaSerializable();
+                if (xs.Contains(dsSchema.TargetNamespace)) {
+                    global::System.IO.MemoryStream s1 = new global::System.IO.MemoryStream();
+                    global::System.IO.MemoryStream s2 = new global::System.IO.MemoryStream();
+                    try {
+                        global::System.Xml.Schema.XmlSchema schema = null;
+                        dsSchema.Write(s1);
+                        for (global::System.Collections.IEnumerator schemas = xs.Schemas(dsSchema.TargetNamespace).GetEnumerator(); schemas.MoveNext(); ) {
+                            schema = ((global::System.Xml.Schema.XmlSchema)(schemas.Current));
+                            s2.SetLength(0);
+                            schema.Write(s2);
+                            if ((s1.Length == s2.Length)) {
+                                s1.Position = 0;
+                                s2.Position = 0;
+                                for (; ((s1.Position != s1.Length) 
+                                            && (s1.ReadByte() == s2.ReadByte())); ) {
+                                    ;
+                                }
+                                if ((s1.Position == s1.Length)) {
+                                    return type;
+                                }
+                            }
+                        }
+                    }
+                    finally {
+                        if ((s1 != null)) {
+                            s1.Close();
+                        }
+                        if ((s2 != null)) {
+                            s2.Close();
+                        }
+                    }
+                }
+                xs.Add(dsSchema);
+                return type;
+            }
+        }
+        
+        /// <summary>
         ///Represents strongly named DataRow class.
         ///</summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "2.0.0.0")]
@@ -3805,6 +4182,271 @@ namespace RetailStore {
         }
         
         /// <summary>
+        ///Represents strongly named DataRow class.
+        ///</summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "2.0.0.0")]
+        public partial class Purchase_RecieptRow : global::System.Data.DataRow {
+            
+            private Purchase_RecieptDataTable tablePurchase_Reciept;
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            internal Purchase_RecieptRow(global::System.Data.DataRowBuilder rb) : 
+                    base(rb) {
+                this.tablePurchase_Reciept = ((Purchase_RecieptDataTable)(this.Table));
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            public string DataColumn1 {
+                get {
+                    try {
+                        return ((string)(this[this.tablePurchase_Reciept.DataColumn1Column]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'DataColumn1\' in table \'Purchase Reciept\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tablePurchase_Reciept.DataColumn1Column] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            public string DataColumn2 {
+                get {
+                    try {
+                        return ((string)(this[this.tablePurchase_Reciept.DataColumn2Column]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'DataColumn2\' in table \'Purchase Reciept\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tablePurchase_Reciept.DataColumn2Column] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            public string DataColumn3 {
+                get {
+                    try {
+                        return ((string)(this[this.tablePurchase_Reciept.DataColumn3Column]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'DataColumn3\' in table \'Purchase Reciept\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tablePurchase_Reciept.DataColumn3Column] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            public string DataColumn4 {
+                get {
+                    try {
+                        return ((string)(this[this.tablePurchase_Reciept.DataColumn4Column]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'DataColumn4\' in table \'Purchase Reciept\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tablePurchase_Reciept.DataColumn4Column] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            public string DataColumn5 {
+                get {
+                    try {
+                        return ((string)(this[this.tablePurchase_Reciept.DataColumn5Column]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'DataColumn5\' in table \'Purchase Reciept\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tablePurchase_Reciept.DataColumn5Column] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            public string DataColumn6 {
+                get {
+                    try {
+                        return ((string)(this[this.tablePurchase_Reciept.DataColumn6Column]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'DataColumn6\' in table \'Purchase Reciept\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tablePurchase_Reciept.DataColumn6Column] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            public string DataColumn7 {
+                get {
+                    try {
+                        return ((string)(this[this.tablePurchase_Reciept.DataColumn7Column]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'DataColumn7\' in table \'Purchase Reciept\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tablePurchase_Reciept.DataColumn7Column] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            public string DataColumn8 {
+                get {
+                    try {
+                        return ((string)(this[this.tablePurchase_Reciept.DataColumn8Column]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'DataColumn8\' in table \'Purchase Reciept\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tablePurchase_Reciept.DataColumn8Column] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            public string DataColumn9 {
+                get {
+                    try {
+                        return ((string)(this[this.tablePurchase_Reciept.DataColumn9Column]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'DataColumn9\' in table \'Purchase Reciept\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tablePurchase_Reciept.DataColumn9Column] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            public string DataColumn10 {
+                get {
+                    try {
+                        return ((string)(this[this.tablePurchase_Reciept.DataColumn10Column]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'DataColumn10\' in table \'Purchase Reciept\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tablePurchase_Reciept.DataColumn10Column] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            public bool IsDataColumn1Null() {
+                return this.IsNull(this.tablePurchase_Reciept.DataColumn1Column);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            public void SetDataColumn1Null() {
+                this[this.tablePurchase_Reciept.DataColumn1Column] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            public bool IsDataColumn2Null() {
+                return this.IsNull(this.tablePurchase_Reciept.DataColumn2Column);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            public void SetDataColumn2Null() {
+                this[this.tablePurchase_Reciept.DataColumn2Column] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            public bool IsDataColumn3Null() {
+                return this.IsNull(this.tablePurchase_Reciept.DataColumn3Column);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            public void SetDataColumn3Null() {
+                this[this.tablePurchase_Reciept.DataColumn3Column] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            public bool IsDataColumn4Null() {
+                return this.IsNull(this.tablePurchase_Reciept.DataColumn4Column);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            public void SetDataColumn4Null() {
+                this[this.tablePurchase_Reciept.DataColumn4Column] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            public bool IsDataColumn5Null() {
+                return this.IsNull(this.tablePurchase_Reciept.DataColumn5Column);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            public void SetDataColumn5Null() {
+                this[this.tablePurchase_Reciept.DataColumn5Column] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            public bool IsDataColumn6Null() {
+                return this.IsNull(this.tablePurchase_Reciept.DataColumn6Column);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            public void SetDataColumn6Null() {
+                this[this.tablePurchase_Reciept.DataColumn6Column] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            public bool IsDataColumn7Null() {
+                return this.IsNull(this.tablePurchase_Reciept.DataColumn7Column);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            public void SetDataColumn7Null() {
+                this[this.tablePurchase_Reciept.DataColumn7Column] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            public bool IsDataColumn8Null() {
+                return this.IsNull(this.tablePurchase_Reciept.DataColumn8Column);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            public void SetDataColumn8Null() {
+                this[this.tablePurchase_Reciept.DataColumn8Column] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            public bool IsDataColumn9Null() {
+                return this.IsNull(this.tablePurchase_Reciept.DataColumn9Column);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            public void SetDataColumn9Null() {
+                this[this.tablePurchase_Reciept.DataColumn9Column] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            public bool IsDataColumn10Null() {
+                return this.IsNull(this.tablePurchase_Reciept.DataColumn10Column);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            public void SetDataColumn10Null() {
+                this[this.tablePurchase_Reciept.DataColumn10Column] = global::System.Convert.DBNull;
+            }
+        }
+        
+        /// <summary>
         ///Row event argument class
         ///</summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "2.0.0.0")]
@@ -4008,6 +4650,37 @@ namespace RetailStore {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             public SalesRow Row {
+                get {
+                    return this.eventRow;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            public global::System.Data.DataRowAction Action {
+                get {
+                    return this.eventAction;
+                }
+            }
+        }
+        
+        /// <summary>
+        ///Row event argument class
+        ///</summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "2.0.0.0")]
+        public class Purchase_RecieptRowChangeEvent : global::System.EventArgs {
+            
+            private Purchase_RecieptRow eventRow;
+            
+            private global::System.Data.DataRowAction eventAction;
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            public Purchase_RecieptRowChangeEvent(Purchase_RecieptRow row, global::System.Data.DataRowAction action) {
+                this.eventRow = row;
+                this.eventAction = action;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            public Purchase_RecieptRow Row {
                 get {
                     return this.eventRow;
                 }
