@@ -77,70 +77,15 @@ namespace RetailStore.Presentation_Layer
         public Boolean validateInput()
         {
             b=false;
-            if (i.emptyCheck(txtCustId.Text))
+            if (i.emptyCheck(txtCustId.Text) && i.emptyCheck(txtCustName.Text) && i.emptyCheck(txtAddress1.Text) && i.emptyCheck(txtAddress2.Text) && i.emptyCheck(txtAddress3.Text) && i.emptyCheck(txtCity.Text) && i.emptyCheck(txtState.Text) && i.emptyCheck(txtPin.Text)&& i.emptyCheck(txtCountry.Text) && i.emptyCheck(txtPhone.Text) && i.emptyCheck(txtEmail.Text))
             {
                b = true;
             }
-            if (i.emptyCheck(txtCustName.Text))
+            if (i.numCheck(txtPhone.Text) && i.numCheck(txtPin.Text))
             {
                 b = true;
             }
-            if(i.emptyCheck(txtAddress1.Text))
-            {
-                b = true;
-            }
-            if (i.emptyCheck(txtAddress2.Text))
-            {
-                b = true;
-            }
-            if (i.emptyCheck(txtAddress3.Text))
-            {
-                b = true;
-            }
-            if (i.emptyCheck(txtCity.Text))
-            {
-                b = true;
-            }
-            if (i.emptyCheck(txtCountry.Text))
-            {                b = true;
-            }
-            if (i.emptyCheck(txtPin.Text))
-            {
-                b = true;
-            }
-            if (i.emptyCheck(txtState.Text))
-            {
-                b = true;
-            }
-            if (i.emptyCheck(txtPhone.Text))
-            {
-                b = true;
-            }
-            if (i.emptyCheck(txtEmail.Text))
-            {
-                b = true;
-            }
-            if (i.numCheck(txtPhone.Text))
-            {
-                b = true;
-            }
-            if (i.numCheck(txtPin.Text))
-            {
-                b = true;
-            }
-            if (i.charCheck(txtCustName.Text))
-            {
-                b = true;
-            }
-            if (i.charCheck(txtCity.Text))
-            {
-                b = true;
-            }
-            if (i.charCheck(txtState.Text))
-            {
-                b = true;
-            }
-            if (i.charCheck(txtCountry.Text))
+            if (i.charCheck(txtCustName.Text) && i.charCheck(txtCity.Text) && i.charCheck(txtState.Text) && i.charCheck(txtCountry.Text))
             {
                 b = true;
             }

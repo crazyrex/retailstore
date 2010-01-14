@@ -33,8 +33,6 @@ namespace RetailStore.Presentation_Layer
             this.lblusername = new System.Windows.Forms.Label();
             this.txtUserId = new System.Windows.Forms.TextBox();
             this.txtUserName = new System.Windows.Forms.TextBox();
-            this.lblpassword = new System.Windows.Forms.Label();
-            this.txtPass = new System.Windows.Forms.TextBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.txtAddress3 = new System.Windows.Forms.TextBox();
             this.txtAddress2 = new System.Windows.Forms.TextBox();
@@ -76,7 +74,7 @@ namespace RetailStore.Presentation_Layer
             // lbluserid
             // 
             this.lbluserid.AutoSize = true;
-            this.lbluserid.Location = new System.Drawing.Point(22, 51);
+            this.lbluserid.Location = new System.Drawing.Point(22, 54);
             this.lbluserid.Name = "lbluserid";
             this.lbluserid.Size = new System.Drawing.Size(41, 13);
             this.lbluserid.TabIndex = 1;
@@ -85,7 +83,7 @@ namespace RetailStore.Presentation_Layer
             // lblusername
             // 
             this.lblusername.AutoSize = true;
-            this.lblusername.Location = new System.Drawing.Point(21, 73);
+            this.lblusername.Location = new System.Drawing.Point(21, 83);
             this.lblusername.Name = "lblusername";
             this.lblusername.Size = new System.Drawing.Size(63, 13);
             this.lblusername.TabIndex = 2;
@@ -93,38 +91,20 @@ namespace RetailStore.Presentation_Layer
             // 
             // txtUserId
             // 
-            this.txtUserId.Location = new System.Drawing.Point(112, 44);
+            this.txtUserId.Location = new System.Drawing.Point(112, 51);
             this.txtUserId.MaxLength = 6;
             this.txtUserId.Name = "txtUserId";
-            this.txtUserId.Size = new System.Drawing.Size(100, 20);
+            this.txtUserId.Size = new System.Drawing.Size(170, 20);
             this.txtUserId.TabIndex = 1;
             // 
             // txtUserName
             // 
-            this.txtUserName.Location = new System.Drawing.Point(112, 70);
+            this.txtUserName.Location = new System.Drawing.Point(112, 80);
             this.txtUserName.MaxLength = 255;
             this.txtUserName.Name = "txtUserName";
             this.txtUserName.Size = new System.Drawing.Size(170, 20);
             this.txtUserName.TabIndex = 2;
             this.txtUserName.TextChanged += new System.EventHandler(this.txtUserName_TextChanged);
-            // 
-            // lblpassword
-            // 
-            this.lblpassword.AutoSize = true;
-            this.lblpassword.Location = new System.Drawing.Point(21, 97);
-            this.lblpassword.Name = "lblpassword";
-            this.lblpassword.Size = new System.Drawing.Size(81, 13);
-            this.lblpassword.TabIndex = 5;
-            this.lblpassword.Text = "Enter Password";
-            // 
-            // txtPass
-            // 
-            this.txtPass.Location = new System.Drawing.Point(112, 97);
-            this.txtPass.MaxLength = 255;
-            this.txtPass.Name = "txtPass";
-            this.txtPass.PasswordChar = '*';
-            this.txtPass.Size = new System.Drawing.Size(170, 20);
-            this.txtPass.TabIndex = 3;
             // 
             // groupBox1
             // 
@@ -274,7 +254,7 @@ namespace RetailStore.Presentation_Layer
             this.groupBox2.Controls.Add(this.label1);
             this.groupBox2.Controls.Add(this.txtPhone);
             this.groupBox2.Controls.Add(this.label2);
-            this.groupBox2.Location = new System.Drawing.Point(25, 129);
+            this.groupBox2.Location = new System.Drawing.Point(25, 122);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(238, 92);
             this.groupBox2.TabIndex = 8;
@@ -355,8 +335,6 @@ namespace RetailStore.Presentation_Layer
             this.Controls.Add(this.btnadd);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
-            this.Controls.Add(this.txtPass);
-            this.Controls.Add(this.lblpassword);
             this.Controls.Add(this.txtUserName);
             this.Controls.Add(this.txtUserId);
             this.Controls.Add(this.lblusername);
@@ -383,8 +361,6 @@ namespace RetailStore.Presentation_Layer
         private System.Windows.Forms.Label lblusername;
         private System.Windows.Forms.TextBox txtUserId;
         private System.Windows.Forms.TextBox txtUserName;
-        private System.Windows.Forms.Label lblpassword;
-        private System.Windows.Forms.TextBox txtPass;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.Button btnadd;

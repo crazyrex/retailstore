@@ -11,6 +11,8 @@ namespace RetailStore.Presentation_Layer
     public partial class frmAddWarehouse : Form
     {
         private DAL d = new DAL();
+        REVAL r = new REVAL();
+        Boolean b;
         public frmAddWarehouse()
         {
             InitializeComponent();
@@ -30,11 +32,18 @@ namespace RetailStore.Presentation_Layer
 
         private void btnsave_Click(object sender, EventArgs e)
         {
-            //txtWarehouseId.Text = d.autoGenerateID("WH_Details", "WH_ID", "WH");
-            d.addEntityAddress(txtWarehouseId.Text, txtAddress1.Text, txtAddress2.Text, txtAddress3.Text, txtCity.Text, txtPin.Text, txtState.Text, txtCountry.Text);
-            d.addWarehouseDetails(txtWarehouseId.Text, txtWarehouseName.Text, txtContact.Text, txtCapacity.Text);
-            clearTxt();
-            MessageBox.Show("Warehouse added");
+            validateInput();
+            if (b)
+            {
+                MessageBox.Show("Please enter all fields with proper values");
+            }
+            else
+            {
+                d.addEntityAddress(txtWarehouseId.Text, txtAddress1.Text, txtAddress2.Text, txtAddress3.Text, txtCity.Text, txtPin.Text, txtState.Text, txtCountry.Text);
+                d.addWarehouseDetails(txtWarehouseId.Text, txtWarehouseName.Text, txtContact.Text, txtCapacity.Text);
+                clearTxt();
+                MessageBox.Show("Warehouse added");
+            }
         }
 
         private void txtWarehouseName_TextChanged(object sender, EventArgs e)
@@ -50,6 +59,23 @@ namespace RetailStore.Presentation_Layer
             txtPin.Text = "";
             txtState.Text = "";
             txtCountry.Text = "";
+        }
+        public Boolean validateInput()
+        {
+            b = false;
+            if (r.emptyCheck(txtWarehouseId.Text) && r.emptyCheck(txtWarehouseName.Text) && r.emptyCheck(txtAddress1.Text) && r.emptyCheck(txtAddress2.Text) && r.emptyCheck(txtAddress3.Text) && r.emptyCheck(txtCity.Text) && r.emptyCheck(txtState.Text) && r.emptyCheck(txtPin.Text) && r.emptyCheck(txtCountry.Text) && r.emptyCheck(txtContact.Text) && r.emptyCheck(txtCapacity.Text))
+            {
+                b = true;
+            }
+            if (r.numCheck(txtContact.Text) && r.numCheck(txtPin.Text) && r.emptyCheck(txtCapacity.Text))
+            {
+                b = true;
+            }
+            if (r.charCheck(txtWarehouseName.Text) && r.charCheck(txtCity.Text) && r.charCheck(txtState.Text) && r.charCheck(txtCountry.Text))
+            {
+                b = true;
+            }
+            return b;
         }
     }
 }
