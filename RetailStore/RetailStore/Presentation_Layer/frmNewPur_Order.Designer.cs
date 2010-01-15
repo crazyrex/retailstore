@@ -30,11 +30,11 @@
         {
             this.lblinfo = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.btnSearch = new System.Windows.Forms.Button();
             this.cmbVenName = new System.Windows.Forms.ComboBox();
             this.dtp_Req_Date = new System.Windows.Forms.DateTimePicker();
             this.lblreqdate = new System.Windows.Forms.Label();
-            this.txtDate = new System.Windows.Forms.TextBox();
             this.lbldate = new System.Windows.Forms.Label();
             this.lblvenid = new System.Windows.Forms.Label();
             this.txtPurchaseId = new System.Windows.Forms.TextBox();
@@ -66,11 +66,11 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.dateTimePicker1);
             this.groupBox1.Controls.Add(this.btnSearch);
             this.groupBox1.Controls.Add(this.cmbVenName);
             this.groupBox1.Controls.Add(this.dtp_Req_Date);
             this.groupBox1.Controls.Add(this.lblreqdate);
-            this.groupBox1.Controls.Add(this.txtDate);
             this.groupBox1.Controls.Add(this.lbldate);
             this.groupBox1.Controls.Add(this.lblvenid);
             this.groupBox1.Controls.Add(this.txtPurchaseId);
@@ -81,6 +81,14 @@
             this.groupBox1.TabIndex = 1;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "General Information";
+            // 
+            // dateTimePicker1
+            // 
+            this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dateTimePicker1.Location = new System.Drawing.Point(108, 61);
+            this.dateTimePicker1.Name = "dateTimePicker1";
+            this.dateTimePicker1.Size = new System.Drawing.Size(126, 20);
+            this.dateTimePicker1.TabIndex = 8;
             // 
             // btnSearch
             // 
@@ -117,21 +125,14 @@
             this.lblreqdate.TabIndex = 6;
             this.lblreqdate.Text = "Required Date\r\n";
             // 
-            // txtDate
-            // 
-            this.txtDate.Location = new System.Drawing.Point(108, 59);
-            this.txtDate.Name = "txtDate";
-            this.txtDate.Size = new System.Drawing.Size(126, 20);
-            this.txtDate.TabIndex = 2;
-            // 
             // lbldate
             // 
             this.lbldate.AutoSize = true;
             this.lbldate.Location = new System.Drawing.Point(15, 61);
             this.lbldate.Name = "lbldate";
-            this.lbldate.Size = new System.Drawing.Size(69, 13);
+            this.lbldate.Size = new System.Drawing.Size(59, 13);
             this.lbldate.TabIndex = 4;
-            this.lbldate.Text = "Present Date";
+            this.lbldate.Text = "Order Date";
             // 
             // lblvenid
             // 
@@ -215,7 +216,7 @@
             // txtTotal
             // 
             this.txtTotal.Enabled = false;
-            this.txtTotal.Location = new System.Drawing.Point(465, 328);
+            this.txtTotal.Location = new System.Drawing.Point(460, 328);
             this.txtTotal.Name = "txtTotal";
             this.txtTotal.Size = new System.Drawing.Size(140, 20);
             this.txtTotal.TabIndex = 10;
@@ -283,7 +284,6 @@
         private System.Windows.Forms.Label lblvenid;
         private System.Windows.Forms.TextBox txtPurchaseId;
         private System.Windows.Forms.Label lblreqdate;
-        private System.Windows.Forms.TextBox txtDate;
         private System.Windows.Forms.Label lbldate;
         private System.Windows.Forms.DateTimePicker dtp_Req_Date;
         private System.Windows.Forms.DataGridView dgvPOItems;
@@ -299,5 +299,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn qty;
         private System.Windows.Forms.DataGridViewTextBoxColumn price;
         private System.Windows.Forms.DataGridViewTextBoxColumn subtotal;
+        private System.Windows.Forms.DateTimePicker dateTimePicker1;
     }
 }
