@@ -269,7 +269,7 @@ namespace RetailStore
             return this.executeSelectStmt(q);
         }
 
-        public DataTable populateCombo(string tableName, string columnName, string condCol, string condText)
+        public DataTable findRecords(string tableName, string columnName, string condCol, string condText)
         {
             /*
               This function fills combobox with data
