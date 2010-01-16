@@ -58,29 +58,42 @@ namespace RetailStore.Presentation_Layer
         }
         private void cb_SelectedIndexChanged(object sender, EventArgs e)
         {
-            ComboBox cbo = (ComboBox)sender;
-            DataTable dt = new DataTable();
-            dt = d.findRecords("Product_Details", "Description", "Product_ID", cbo.Text);
-            string description = dt.Rows[0][0].ToString();
-            dt = d.findRecords("Product_Pricelist", "Purchase_Price", "Product_ID", cbo.Text);
-            string price = dt.Rows[0][0].ToString();
-            dgvPOItems[dgvPOItems.SelectedCells[0].ColumnIndex + 1, dgvPOItems.SelectedCells[0].RowIndex].Value = description;
-            dgvPOItems[dgvPOItems.SelectedCells[0].ColumnIndex + 2, dgvPOItems.SelectedCells[0].RowIndex].Value = 1;
-            dgvPOItems[dgvPOItems.SelectedCells[0].ColumnIndex + 3, dgvPOItems.SelectedCells[0].RowIndex].Value = price;
-            dgvPOItems[dgvPOItems.SelectedCells[0].ColumnIndex + 4, dgvPOItems.SelectedCells[0].RowIndex].Value = price;
-            total = total + int.Parse(price);
-            txtTotal.Text = total.ToString();
+            try
+            {
+                ComboBox cbo = (ComboBox)sender;
+                DataTable dt = new DataTable();
+                dt = d.findRecords("Product_Details", "Description", "Product_ID", cbo.Text);
+                string description = dt.Rows[0][0].ToString();
+                dt = d.findRecords("Product_Pricelist", "Purchase_Price", "Product_ID", cbo.Text);
+                string price = dt.Rows[0][0].ToString();
+                dgvPOItems[dgvPOItems.SelectedCells[0].ColumnIndex + 1, dgvPOItems.SelectedCells[0].RowIndex].Value = description;
+                dgvPOItems[dgvPOItems.SelectedCells[0].ColumnIndex + 3, dgvPOItems.SelectedCells[0].RowIndex].Value = price;
+                dgvPOItems[dgvPOItems.SelectedCells[0].ColumnIndex + 4, dgvPOItems.SelectedCells[0].RowIndex].Value = price;
+                txtTotal.Text = total.ToString();
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
 
         }
         private void tb_TextChanged(object sender, EventArgs e)
         {
             TextBox tb = (TextBox)sender;
-            int qty= int.Parse(tb.Text);
-            string prodPrice= (string)dgvPOItems[dgvPOItems.SelectedCells[0].ColumnIndex + 1, dgvPOItems.SelectedCells[0].RowIndex].Value;
-            int price = int.Parse(prodPrice);
-            dgvPOItems[dgvPOItems.SelectedCells[0].ColumnIndex + 2, dgvPOItems.SelectedCells[0].RowIndex].Value = qty * price;
-            total = total + (qty * price);
-            txtTotal.Text = total.ToString();
+            try
+            {
+                int qty = int.Parse(tb.Text);
+                string prodPrice= (string)dgvPOItems[dgvPOItems.SelectedCells[0].ColumnIndex + 1, dgvPOItems.SelectedCells[0].RowIndex].Value;
+                int price = int.Parse(prodPrice);
+                dgvPOItems[dgvPOItems.SelectedCells[0].ColumnIndex + 2, dgvPOItems.SelectedCells[0].RowIndex].Value = qty * price;
+                total = total + (qty * price);
+                txtTotal.Text = total.ToString();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
 
         private void frmNewPur_Order_Load(object sender, EventArgs e)

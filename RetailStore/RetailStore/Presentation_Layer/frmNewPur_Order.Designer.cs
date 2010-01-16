@@ -40,16 +40,16 @@
             this.txtPurchaseId = new System.Windows.Forms.TextBox();
             this.lblpurcid = new System.Windows.Forms.Label();
             this.dgvPOItems = new System.Windows.Forms.DataGridView();
-            this.ProductID = new System.Windows.Forms.DataGridViewComboBoxColumn();
-            this.productDescription = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.qty = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.price = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.subtotal = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.lbltotal = new System.Windows.Forms.Label();
             this.txtTotal = new System.Windows.Forms.TextBox();
             this.btnConfirm = new System.Windows.Forms.Button();
             this.btnprint = new System.Windows.Forms.Button();
             this.btnclose = new System.Windows.Forms.Button();
+            this.ProductID = new System.Windows.Forms.DataGridViewComboBoxColumn();
+            this.productDescription = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.qty = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.price = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.subtotal = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvPOItems)).BeginInit();
             this.SuspendLayout();
@@ -176,33 +176,6 @@
             this.dgvPOItems.Size = new System.Drawing.Size(593, 164);
             this.dgvPOItems.TabIndex = 11;
             // 
-            // ProductID
-            // 
-            this.ProductID.HeaderText = "Product ID";
-            this.ProductID.Name = "ProductID";
-            this.ProductID.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.ProductID.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
-            // 
-            // productDescription
-            // 
-            this.productDescription.HeaderText = "Product Description";
-            this.productDescription.Name = "productDescription";
-            // 
-            // qty
-            // 
-            this.qty.HeaderText = "Quantity";
-            this.qty.Name = "qty";
-            // 
-            // price
-            // 
-            this.price.HeaderText = "Price";
-            this.price.Name = "price";
-            // 
-            // subtotal
-            // 
-            this.subtotal.HeaderText = "Amount";
-            this.subtotal.Name = "subtotal";
-            // 
             // lbltotal
             // 
             this.lbltotal.AutoSize = true;
@@ -250,6 +223,36 @@
             this.btnclose.UseVisualStyleBackColor = true;
             this.btnclose.Click += new System.EventHandler(this.btnclose_Click);
             // 
+            // ProductID
+            // 
+            this.ProductID.DisplayStyle = System.Windows.Forms.DataGridViewComboBoxDisplayStyle.ComboBox;
+            this.ProductID.DisplayStyleForCurrentCellOnly = true;
+            this.ProductID.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.ProductID.HeaderText = "Product ID";
+            this.ProductID.Name = "ProductID";
+            this.ProductID.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.ProductID.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
+            // 
+            // productDescription
+            // 
+            this.productDescription.HeaderText = "Product Description";
+            this.productDescription.Name = "productDescription";
+            // 
+            // qty
+            // 
+            this.qty.HeaderText = "Quantity";
+            this.qty.Name = "qty";
+            // 
+            // price
+            // 
+            this.price.HeaderText = "Price";
+            this.price.Name = "price";
+            // 
+            // subtotal
+            // 
+            this.subtotal.HeaderText = "Amount";
+            this.subtotal.Name = "subtotal";
+            // 
             // frmNewPur_Order
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -294,11 +297,11 @@
         private System.Windows.Forms.Button btnclose;
         private System.Windows.Forms.ComboBox cmbVenName;
         private System.Windows.Forms.Button btnSearch;
+        private System.Windows.Forms.DateTimePicker dateTimePicker1;
         private System.Windows.Forms.DataGridViewComboBoxColumn ProductID;
         private System.Windows.Forms.DataGridViewTextBoxColumn productDescription;
         private System.Windows.Forms.DataGridViewTextBoxColumn qty;
         private System.Windows.Forms.DataGridViewTextBoxColumn price;
         private System.Windows.Forms.DataGridViewTextBoxColumn subtotal;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
     }
 }
