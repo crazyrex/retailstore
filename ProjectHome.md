@@ -1,0 +1,1 @@
+It's an inventory application which automates all the processes that are carried out in a retail store.
